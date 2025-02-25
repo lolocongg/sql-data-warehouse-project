@@ -38,7 +38,11 @@ UNION ALL
 SELECT 'Total Products', COUNT(DISTINCT product_name) FROM gold.dim_products
 UNION ALL
 SELECT 'Total Customers', COUNT(customer_key) FROM gold.dim_customers;
-
+/*
+Purpose:
+    - To quantify data and group results by specific dimensions.
+    - For understanding data distribution across categories.
+*/
 -- magnitude_analysis
 -- Find total customers by countries
 SELECT
