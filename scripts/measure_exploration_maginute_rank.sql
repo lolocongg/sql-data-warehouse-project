@@ -111,8 +111,12 @@ LEFT JOIN gold.dim_customers c
     ON c.customer_key = f.customer_key
 GROUP BY c.country
 ORDER BY total_sold_items DESC;
-/*========================================*/
 
+/*
+Purpose:
+    - To rank items (e.g., products, customers) based on performance or other metrics.
+    - To identify top performers or laggards.
+*/
 -- rank_analysis
 -- Which 5 products Generating the Highest Revenue?
 -- Simple Ranking
